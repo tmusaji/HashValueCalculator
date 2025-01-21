@@ -1,2 +1,2 @@
 # HashValueCalculator
-This is the python based tool kit that monitors all the files in a directory and detects if any changes have been done to the file by comparing its previous and new hash value.
+This code monitors files in a specified directory (myfiles) for changes by computing and storing their initial content hashes using the MD5 algorithm. It first lists all files in the directory, calculates a hash for each file, and stores these in a dictionary (file_data) with filenames as keys. After a brief pause, it checks the directory again, recalculates the hashes, and compares them to the stored values. If any file's current hash differs from the stored hash, it prints a message indicating that the file has been modified.
